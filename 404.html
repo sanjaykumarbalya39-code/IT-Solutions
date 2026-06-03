@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Stackly</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+ 
+
+    <section class="error-page">
+      <div class="container">
+        <div class="reveal error-page-inner">
+          <p class="error-code" aria-hidden="true">404</p>
+          <h1 class="error-title">Page not found</h1>
+          <p class="page-hero-sub" style="max-width: 58ch">
+            The page you requested doesn’t exist, or the URL is incorrect. Try going back,
+            or return to the homepage.
+          </p>
+          <div class="error-actions mt-3">
+            <a class="btn btn-primary" href="index.html">Back Home</a>
+            <button class="btn btn-primary" type="button" data-go-back>Go Back</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+    <script>
+      (function () {
+        var btn = document.querySelector("[data-go-back]");
+        if (!btn) return;
+        btn.addEventListener("click", function () {
+          if (window.history.length > 1) window.history.back();
+          else window.location.href = "index.html";
+        });
+      })();
+    </script>
+  </body>
+</html>

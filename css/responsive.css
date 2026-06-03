@@ -1,0 +1,484 @@
+@media (max-width: 1024px) {
+
+  .hero {
+    min-height: calc(100vh - 78px);
+    padding-top: 78px;
+    padding-bottom: 40px;
+  }
+
+  .hero-grid,
+  .two-col,
+  .price-grid,
+  .blog-grid,
+  .grid-3,
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+ 
+  .hero-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .tech-grid,
+  .stats,
+  .dash-cards,
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pricing-contracts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pricing-signals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-deliverables {
+    grid-template-columns: 1fr;
+  }
+
+  .services-pipeline-arrow {
+    display: none;
+  }
+
+  .services-pipeline-step {
+    max-width: none;
+    flex: 1 1 calc(50% - 10px);
+  }
+
+ 
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    text-align: center;
+  }
+
+  .footer-brand {
+    max-width: 56ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-brand .social-links {
+    justify-content: center;
+  }
+
+  .footer-contact {
+    justify-items: center;
+  }
+
+  .footer-contact-item {
+    justify-content: center;
+  }
+
+
+  .dashboard {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .dashboard .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+    padding: 18px 16px;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+    overflow: visible;
+    flex: none;
+  }
+
+  .sidebar li {
+    flex: 0 1 auto;
+  }
+
+  .sidebar li a {
+    margin-bottom: 0;
+  }
+
+  .dash-main {
+    padding: 22px;
+    min-width: 0;
+  }
+
+  
+  .dash-chart-grid--triple {
+    grid-template-columns: 1fr;
+  }
+
+  .dash-chart-grid--triple .dash-chart-span-2 {
+    grid-column: span 1;
+  }
+
+
+  .contact-page-stack .two-col.two-col--balanced {
+    grid-template-columns: 1fr;
+  }
+
+  
+  .page-hero--glow {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-hero--glow > .container {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-hero-inner,
+  .about-hero-inner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions,
+  .contact-hero-actions {
+    justify-content: center;
+  }
+
+  .error-page {
+    padding-top: 78px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    background: rgba(6, 11, 22, 0.97);
+    flex-direction: column;
+    padding: 16px 4%;
+    transform: translateY(-130%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .nav-mobile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 12px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(148, 163, 184, 0.25);
+  }
+
+  .nav-mobile-actions .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .hero-grid,
+  .two-col,
+  .price-grid,
+  .blog-grid,
+  .grid-3,
+  .footer-grid,
+  .tech-grid,
+  .stats,
+  .dash-cards,
+  .dashboard,
+  .portfolio-grid,
+  .check-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard {
+    min-height: auto;
+  }
+
+  .dash-chart-grid,
+  .dash-chart-grid--triple,
+  .dash-split {
+    grid-template-columns: 1fr;
+  }
+
+  .dash-chart-span-2 {
+    grid-column: span 1;
+  }
+
+  .dash-kpi-row {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard .sidebar {
+    position: sticky;
+    top: 0;
+    height: auto;
+  }
+
+  .sidebar ul {
+    overflow: visible;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .sidebar li {
+    flex: none;
+    width: 100%;
+  }
+
+  .sidebar li a {
+    margin-bottom: 8px;
+  }
+
+ 
+  .page-hero h1 {
+    max-width: 18ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-hero h1 {
+    max-width: 20ch;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: min(100%, 420px);
+  }
+
+  
+  .newsletter-form > div {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .newsletter-form .btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .newsletter {
+    padding: 36px 20px;
+  }
+
+  .error-page {
+    padding-top: 78px;
+  }
+
+  .contact-meta {
+    margin-top: 24px;
+  }
+
+  .contact-map-frame iframe {
+    height: 240px;
+  }
+
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+    margin-top: 28px;
+  }
+
+  .testimonial-wrap.is-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-contracts {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-addon {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pricing-addon-price {
+    align-self: flex-end;
+  }
+
+  .pricing-trust-bar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pricing-trust-item {
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .services-cap-bar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-cap-item {
+    text-align: center;
+    width: auto;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .services-pipeline-step {
+    flex: 1 1 100%;
+  }
+
+  .about-hero-points {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-hero-point {
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter {
+    padding: 28px 16px;
+  }
+
+ 
+  .section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .content-block {
+    padding: 22px;
+  }
+
+ 
+  .hero {
+    min-height: auto;
+    padding-top: 92px;
+    padding-bottom: 64px;
+  }
+
+  .page-hero--glow {
+    padding-top: 140px;
+    padding-bottom: 76px;
+    min-height: auto;
+  }
+
+  .error-page {
+    padding-top: 78px;
+  }
+
+
+  .nav-mobile-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+ 
+  .hero-actions .btn {
+    width: auto;
+    min-width: 0;
+  }
+
+  
+  .footer-grid {
+    gap: 22px;
+  }
+
+ 
+  .services-industry-pill,
+  .contact-hero-chip,
+  .tech-pill {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+
+  .services-cap-item {
+    width: auto;
+    max-width: 100%;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+
+  .pricing-trust-item {
+    width: auto;
+    max-width: 100%;
+  }
+
+
+  .table-wrap {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  .dash-main {
+    padding: 16px;
+  }
+
+  .dash-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dash-stat-card h3 {
+    font-size: 1.45rem;
+  }
+
+  .dash-chart-canvas-wrap {
+    height: 220px;
+  }
+
+  .dash-chart-canvas-wrap--tall {
+    height: 240px;
+  }
+
+  .dash-chart-canvas-wrap--compact {
+    height: 190px;
+  }
+
+  .dash-chart-card {
+    padding: 18px 16px 14px;
+  }
+
+  .dash-main table th,
+  .dash-main table td {
+    padding: 10px 8px;
+    font-size: 0.88rem;
+  }
+}
