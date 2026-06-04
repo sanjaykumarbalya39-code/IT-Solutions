@@ -299,6 +299,10 @@
     height: 240px;
   }
 
+  .footer-map-container iframe {
+    height: 240px;
+  }
+
   .contact-cards-grid {
     grid-template-columns: 1fr;
     margin-top: 28px;
